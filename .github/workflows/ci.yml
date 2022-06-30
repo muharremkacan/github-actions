@@ -2,7 +2,10 @@ name: ci
 
 on: 
   push:
-    branches: [workflow]
+    branches: 
+      - workflow
+    paths:
+      - '!**/README.md'
 
 jobs:
   build:
